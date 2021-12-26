@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  background-color: white;
+  height: 100%;
+}
+:root {
+  --hue: 259;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: #333333;
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+
+  /* fonts*/
+  --title-font-size: 1.85rem;
+  --subtitle-font-size: 1rem;
+}
+.divider-1 {
+  height: 2px;
+  background: linear-gradient(
+    270deg,
+    hsl(var(--hue), 36%, 57%, 1),
+    hsl(var(--hue), 65%, 88%, 0.34)
+  );
+}
+body {
+  display: grid;
+  place-items: center;
+}
+
+#corpo {
+  margin-top: 0.5rem;
+  width: 63.125rem;
+  height: 100%;
+}
+#header {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  display: flex;
+  padding-top: 2rem;
+  width: 63.125rem;
+  position: fixed;
+  top: 0;
+  background-color: var(--body-color);
+}
+
+span {
+  color: var(--base-color);
+  font-size: var(--title-font-size);
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font: 700 1.31rem 'Poppins';
+  color: var(--title-color);
+  transition: 0.2s;
+}
+.logo span {
+  color: var(--base-color);
+  transition: 0.2s;
+}
+.logo:hover {
+  color: var(--base-color);
+  font-size: var(--title-font-size);
+}
+
+.logo span:hover {
+  font: 700 1.31rem 'Poppins';
+  color: var(--title-color);
+}
+.logo-alt span {
+  color: var(--body-color);
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.section {
+  padding: calc(5rem + 4.5rem) 0;
+}
+.section .title {
+  margin-bottom: 1rem;
+}
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
+/* ******NAVIGATION****************** */
+nav {
+  width: 63.125rem;
+  height: 4.5rem;
+}
+nav > .menu {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+nav ul li a {
+  transition: 0.2s;
+  text-decoration: none;
+  color: var(--title-color);
+}
+nav ul li a:hover {
+  color: var(--base-color);
+}
+/* ******Top****************** */
+#top {
+  margin-top: 9rem;
+  width: 63.125rem;
+  height: 15rem;
+  background-color: rgb(80, 80, 243);
+}
+#top > .mySlides {
+  width: 63.125rem;
+  height: 15rem;
+  text-align: center;
+}
+#top > .first {
+  width: 63.125rem;
+  height: 15rem;
+  font: 700 4.31rem 'Poppins';
+  color: var(--base-color-second);
+  background-color: white;
+}
+
+#top > .second {
+  width: 63.125rem;
+  height: 15rem;
+  background-color: white;
+  font: 700 4.31rem 'Poppins';
+}
+#top > .three {
+  width: 63.125rem;
+  height: 15rem;
+  background-color: white;
+  font: 700 4.31rem 'Poppins';
+}
+/* ******Quemsou****************** */
+section#quemsou {
+  background: white;
+}
+
+section#quemsou > p {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+section#servico {
+  width: 63.125rem;
+  background: var(--body-color);
+}
+
+section#servico .placar {
+  width: 30.5625rem;
+  display: inline-block;
+}
+section#servico .placar img {
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  align-items: center;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+/* ******Depoimentos****************** */
+.testimonials {
+  background: white;
+}
+.testimonials header {
+  margin-bottom: 0;
+}
+.testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+.testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+.testimonials blockquote p span {
+  font: 700 3rem serif;
+
+  position: absolute;
+  top: -0.5rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+.testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+.testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+/* **************contact******************** */
+.footer {
+  background: var(--base-color);
+  transition: 0.3s;
+  width: 63.125rem;
+  height: 10rem;
+}
+
+.footer .brand .logo {
+  display: inline-block;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  color: red;
+}
+.footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
